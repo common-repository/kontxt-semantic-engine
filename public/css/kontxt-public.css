@@ -1,0 +1,117 @@
+#kontxt_slideout {
+    /* position: absolute; */
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    width: 35px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#kontxt_slideout_tab {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 8px 8px 8px 6px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    background: #3492eb;
+    color: #000;
+    cursor:pointer;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+#kontxt_slideout_inner {
+    position: absolute;
+    bottom: -50px;
+    left: 35px;
+    background: #3492eb;
+    width: 255px;
+    padding: 15px;
+    height: 250px;
+    cursor:auto;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+#kontxt_recs_showblock:checked + #kontxt_slideout{right: 250px;}
+#kontxt_recs_showblock{display:none;}
+
+.kontxt_content_recs {
+    margin: 1;
+    padding: 0;
+}
+
+.kontxt_content_recs ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.site-header .site-branding {
+    width: 33.9130434783%;
+    float: left;
+    margin-right: 4.347826087%; }
+.woocommerce-active .site-header .site-search {
+    width: 61.7391304348%;
+    float: right;
+    margin-right: 0;
+    clear: none; }
+
+.search-container {
+    margin:auto;
+}
+
+.search-page-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300 !important;
+    display:block;
+    padding-bottom:25px;
+}
+.search-post-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    line-height: 50px;
+    text-align:left;
+    display:block;
+}
+
+.search-post-excerpt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    line-height: 15px;
+    text-align:left;
+    display:block;
+}
+
+.search-post-image {
+
+    float: left;
+    margin-right: 4px;
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-container {
+        width: 100%;
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
